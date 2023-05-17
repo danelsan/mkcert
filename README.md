@@ -12,7 +12,7 @@ Simple run:
 
 For create certification and RootCA write:
 
-	``docker run --rm --name mkcert -v $PWD:/root/.local/share/mkcert mkcert:latest  /bin/sh -c "mkcert -install &&  mkcert -cert-file /root/.local/share/mkcert/mkcert-test.pem   -key-file /root/.local/share/mkcert/mkcert-test.key  'registry.test.test' '*.test.test' localhost 127.0.0.1 ::1"``
+	``docker run --rm --name mkcert -v $PWD:/root/.local/share/mkcert danelsan/mkcert:latest  /bin/sh -c "mkcert -install &&  mkcert -cert-file /root/.local/share/mkcert/mkcert-test.pem   -key-file /root/.local/share/mkcert/mkcert-test.key  'registry.test.test' '*.test.test' localhost 127.0.0.1 ::1"``
 	
 
 ## Where Put Certificates
